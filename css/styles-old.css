@@ -47,7 +47,7 @@ textarea {
 } */
 
 /* HEADER */
-/* .page-header {
+.page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     
@@ -102,7 +102,7 @@ textarea {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover::after,
+.nav:hover::after,
 .nav-link::after,
 .nav-link.current::after {
     opacity: 1;
@@ -137,7 +137,7 @@ textarea {
 .contacts-link:hover,
 .contacts-link:focus {
    color: #404bbf;
-} */
+}
 
 /* HERO */
 
