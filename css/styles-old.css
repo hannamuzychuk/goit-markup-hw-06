@@ -302,7 +302,7 @@ textarea {
 
 }
 
-.link.icon-link {
+.social.icon-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,10 +313,10 @@ textarea {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .social-links .icon {
     fill: #f4f4fd;
 }
-
 .link.icon-link:hover,
 .link.icon-link:focus {
     background-color: #404bbf;
