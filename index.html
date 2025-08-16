@@ -62,10 +62,72 @@
       </div>
       <div class="mobile-menu is-open">
         <div class="container mobile-container">
-          <button class="mobile-menu-close" type="button">Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Adress</address>
-          <div>Soc link</div>
+          <button class="mobile-menu-close" type="button">
+            <svg width="8" height="8" class="icon-close">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="mobile-social-links">
+              <li class="socialmedia-content">
+                <a class="social icon-link" href="#" aria-label="Instagram">
+                  <svg width="16" height="16" class="icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia-content">
+                <a class="social icon-link" href="#" aria-label="Twitter">
+                  <svg width="16" height="16" class="icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia-content">
+                <a class="social icon-link" href="#" aria-label="Facebook">
+                  <svg width="16" height="16" class="icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia-content">
+                <a class="social icon-link" href="#" aria-label="Linkedin">
+                  <svg width="16" height="16" class="icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -528,7 +590,7 @@
     </footer>
 
     <!--MODAL-->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="close-button">
           <svg width="8" height="8" class="icon-close">
@@ -599,15 +661,15 @@
               class="form-input visually-hidden"
             />
 
-            <label class="form-label checkbox" for="user-privacy"
-              ><span class="span-checkbox">
+            <label class="form-label checkbox" for="user-privacy">
+              <span class="span-checkbox">
                 <svg width="10" height="8" class="icon-check">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
               ><span class="text-privacy_policy">
                 I accept the terms and conditions of the
                 <a class="privacy-policy" href="">Privacy Policy</a>
-              </span></label
-            >
+              </span>
+            </label>
           </div>
           <button type="submit" class="form-button">Send</button>
         </form>
