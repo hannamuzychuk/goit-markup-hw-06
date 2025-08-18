@@ -400,7 +400,7 @@ font-size: 20px;
 .hero {
     background-color: #2e2f42;
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-image.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/dark-bg-mob-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -443,10 +443,20 @@ font-size: 20px;
     background-color: #404bbf;
 }
 
+@media (min-resolution:192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/hero/dark-bg-mob@2x-min.jpg");
+    }
+}
+
+
 @media screen and (min-width: 768px) {    
     .hero {
        padding: 112px 0;
         max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/hero/dark-bg-tab-min.jpg");;
     }
 
     .page-title {
@@ -457,17 +467,35 @@ font-size: 20px;
         }        
 }
 
+@media screen and (min-width: 768px) and (min-resolution:192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/hero/dark-bg-tab@2x-min.jpg");
+            ;
+    }
+}
+
 @media screen and (min-width: 1158px) {
 .hero {
         padding: 188px 0;
         max-width: 1158px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url("../images/hero/dark-bg-desk-min.jpg");
+            ;
 }
     .page-title {
     margin-bottom: 48px;
 }
 }
 
-
+@media screen and (min-width: 1158px) and (min-resolution:192dpi) {
+    .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url("../images/hero/dark-bg-desk@2x-min.jpg");
+            ;
+        }
+}
+ 
 /* BENEFITS */
 
 .benefits {
