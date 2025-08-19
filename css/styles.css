@@ -493,13 +493,13 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 /* BENEFITS */
 
 .benefits {
-    padding: 96px 16px;
+    padding: 96px 0;
+   
 }
 
 .benefits-container {
     display: flex;
-    max-width: 288px;
-    padding: 0;
+
 }
 
 .benefits-box {
@@ -545,9 +545,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 
 @media screen and (min-width: 768px) {
-.benefits-container {
-        max-width: 736px;
-    }
+
     .benefits-list {
         flex-direction: row;
         column-gap: 24px;
@@ -565,9 +563,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 
 @media screen and (min-width: 1158px) {
-    .benefits-container {
-            max-width: 1128px;
-        }
+   
         .benefits {
             padding: 120px 0;
         }
@@ -608,13 +604,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 .team {
     background-color: #f4f4fd;
-    padding: 96px 28px;
+    padding: 96px 0;
     text-align: center;
     
-}
-
-.team-container {
-    padding: 0;
 }
 
 .team-title {
@@ -734,11 +726,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 /* PORTFOLIO */
 
 .portfolio {
-    padding: 96px 16px;
+    padding: 96px 0;
 
-}
-.portfolio-container {
-    padding: 0;
 }
 
 .portfolio-title {
@@ -885,7 +874,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 .footer-logo {
     display: flex;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     }
@@ -910,7 +899,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
@@ -1016,13 +1005,12 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 
 @media screen and (min-width: 768px) {
-    .page-footer {
-    padding-left: 108px;
-}
 
     .page-footer-container {
-     justify-content: left;
+     padding-left: 108px;
+     padding-right: 108px;
     }
+
     .footer {
     margin-right: 24px;
     
@@ -1053,12 +1041,11 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     padding: 100px 0;
     }
 
-    .page-footer-container {
-     display: flex;
+    .page-footer-container { 
     align-items: baseline;
-    
-
+    padding: 0 15px;
 }
+
     .footer {
     margin-right: 120px;
     margin-bottom: 0;
@@ -1265,8 +1252,8 @@ textarea::placeholder {
 .span-checkbox {
     display: flex;
     flex-shrink: 0;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -1289,7 +1276,7 @@ input:checked+label>.span-checkbox {
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #434455;
+        color: #8e8f99;
 }
 
 .privacy-policy {
