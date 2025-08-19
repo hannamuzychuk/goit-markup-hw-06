@@ -448,7 +448,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 @media screen and (min-width: 768px) {    
     .hero {
        padding: 112px 0;
-        max-width: 768px;
+        max-width: 100%;
+    
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/hero/dark-bg-tab-min.jpg");;
     }
@@ -472,7 +473,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 @media screen and (min-width: 1158px) {
 .hero {
         padding: 188px 0;
-        max-width: 100%;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url("../images/hero/dark-bg-desk-min.jpg");
             ;
@@ -691,7 +691,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 @media screen and (min-width: 768px) {
 
-    .team {
+    .team-container {
         padding-left: 108px;
         padding-right: 108px;
     }
@@ -702,12 +702,21 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
         column-gap: 24px;
         row-gap: 64px;
         }  
+
+        .team-list-content {
+        width: calc((100% - 24px)/2);
+         }
 }
 
 @media screen and (min-width: 1158px) {
     .team {
          padding: 120px 0;
         }
+
+    .team-container{
+        padding: 0 16px;
+    }
+
          .team-list {
          display: flex;
          gap: 24px;
